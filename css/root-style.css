@@ -1,0 +1,48 @@
+:root {
+
+/* Colors: */
+--unnamed-color-19296a: #19296A;
+--unnamed-color-ffffff: #FFFFFF;
+--unnamed-color-516ddd: #516DDD;
+--unnamed-color-5676ad: #5676AD;
+
+/* Font/text values */
+--unnamed-font-family-ubuntu: Ubuntu;
+--unnamed-font-style-normal: normal;
+--unnamed-font-weight-medium: medium;
+--unnamed-font-weight-normal: normal;
+--unnamed-font-size-20: 20px;
+--unnamed-font-size-36: 36px;
+--unnamed-character-spacing-0: 0px;
+--unnamed-line-spacing-34: 34px;
+--unnamed-line-spacing-80: 80px;
+}
+
+/* Character Styles */
+.unnamed-character-style-1 {
+font-family: var(--unnamed-font-family-ubuntu);
+font-style: var(--unnamed-font-style-normal);
+font-weight: var(--unnamed-font-weight-normal);
+font-size: var(--unnamed-font-size-20);
+line-height: var(--unnamed-line-spacing-34);
+letter-spacing: var(--unnamed-character-spacing-0);
+color: var(--unnamed-color-5676ad);
+}
+.unnamed-character-style-2 {
+font-family: var(--unnamed-font-family-ubuntu);
+font-style: var(--unnamed-font-style-normal);
+font-weight: var(--unnamed-font-weight-medium);
+font-size: var(--unnamed-font-size-36);
+line-height: var(--unnamed-line-spacing-80);
+letter-spacing: var(--unnamed-character-spacing-0);
+color: var(--unnamed-color-516ddd);
+}
+.unnamed-character-style-3 {
+font-family: var(--unnamed-font-family-ubuntu);
+font-style: var(--unnamed-font-style-normal);
+font-weight: var(--unnamed-font-weight-medium);
+font-size: var(--unnamed-font-size-36);
+line-height: var(--unnamed-line-spacing-80);
+letter-spacing: var(--unnamed-character-spacing-0);
+color: var(--unnamed-color-19296a);
+}
