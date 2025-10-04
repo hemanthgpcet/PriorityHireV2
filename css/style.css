@@ -76,7 +76,7 @@ body {
     border-radius: 22px;
 }
 
-.hero .btn .btn-outline-primary{
+.hero .btn .btn-outline-primary {
     font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-medium) 18px/42px var(--unnamed-font-family-ubuntu);
     letter-spacing: var(--unnamed-character-spacing-0);
     text-align: center;
@@ -98,34 +98,132 @@ body {
 .services-section {
     padding: 50px 0;
     background-color: transparent;
-    position: relative;
-    z-index: 1;
+}
+
+
+.card-cut {
+    clip-path: polygon(0 0, calc(100% - 40px) 0, 100% 40px, 100% 100%, 0 100%);
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
 }
 
 .services-intro-card {
-    position: relative;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 0px 12px #516DDD3D;
+    border: 1.6px solid #FFFFFF;
+    border-radius: 12px;
+    opacity: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 167px;
+    width: 227px;
+}
+
+.services-intro-card h2 {
+    font: normal normal bold 20px/19px Ubuntu;
+    letter-spacing: 0px;
+    color: #516DDD;
+    opacity: 1;
+}
+
+.services-intro-card p {
+    font: normal normal normal 14px/20px Ubuntu;
+    letter-spacing: 0px;
+    color: #212785;
+    opacity: 0.8;
 }
 
 .arrow-link {
-    display: inline-block;
-    background-color: var(--unnamed-color-516ddd);
-    color: #fff;
-    padding: 1rem;
+    align-self: flex-end;
+    margin-top: 20px;
+    background-color: #516DDD;
     border-radius: 12px;
-    position: absolute;
-    bottom: -20px;
-    right: 20px;
+    padding: 10px 15px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+.arrow-link:hover {
+    background-color: #4158c3;
 }
 
 .arrow-link img {
-    width: 24px;
-    height: 24px;
+    width: 20px;
+    height: 20px;
     filter: brightness(0) invert(1);
 }
 
-.service-icon {
-    height: 50px;
-    filter: brightness(0) invert(1);
+.services-section .card {
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 180px;
+    height: 167px;
+    /* Increased card width */
+}
+
+.services-section .card:hover {
+    transform: none;
+    /* Removed card lift on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.services-section .card .card-icon-container {
+    background-color: #4A74B8;
+    /* Updated background color */
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 98px;
+    width: 178px;
+    opacity: 0.8;
+}
+
+.services-section .card .service-icon {
+    width: 39px;
+    height: 47px;
+}
+
+.services-section .card .card-body {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    height: 67px;
+    width: 178px;
+}
+
+.services-section .card .card-title {
+    color: #2B308A;
+    transition: transform 0.3s ease;
+    margin: 0 0 0 20px;
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-medium) 15px/18px var(--unnamed-font-family-ubuntu);
+    letter-spacing: 0px;
+    height: 35px;
+    width: 132px;
+    text-align: center;
+    font: normal normal medium 15px/18px Ubuntu;
+}
+
+.services-section .card .hover-arrow {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.services-section .card:hover .card-title {
+    transform: translateX(-10px);
+    color: var(--primary-color);
+}
+
+.services-section .card:hover .hover-arrow {
+    opacity: 1;
 }
 
 /* Responsive Images */
