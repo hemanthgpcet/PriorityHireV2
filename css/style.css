@@ -272,3 +272,52 @@ body {
         max-width: 1320px;
     }
 }
+
+@media (max-width: 991.98px) {
+    .hero {
+        padding: 100px 0;
+    }
+
+    .hero-wrapper::after {
+        display: none;
+    }
+
+    .services-section {
+        margin-top: 0;
+        padding: 2rem 1rem;
+    }
+
+    .services-background {
+        flex-direction: column;
+    }
+
+    .service-intro-wrapper {
+        width: 100%;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .service-card-intro {
+        clip-path: none;
+        padding-bottom: 70px;
+    }
+
+    .arrow-button {
+        bottom: 15px;
+        right: 15px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 575.98px) {
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+}

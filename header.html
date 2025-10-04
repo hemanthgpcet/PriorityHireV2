@@ -6,10 +6,13 @@
             </a>
 
             <nav class="navbar navbar-expand-lg">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
                 <div class="collapse navbar-collapse" id="mainNav">
+                    <div class="d-lg-none d-flex justify-content-between align-items-center mobile-menu-header">
+                        <a class="brand" href="#">
+                            <img src="icons/Iogo.svg" alt="Priority Hire" height="40">
+                        </a>
+                        <button type="button" class="btn-close" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-label="Close"></button>
+                    </div>
                     <ul class="navbar-nav ms-auto align-items-center">
                         <li class="nav-item"><a class="nav-link header-link active" href="#">Home</a></li>
                         <li class="nav-item"><a class="nav-link header-link" href="#how-it-works">How It Works</a></li>
@@ -79,9 +82,12 @@
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
                         <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.28 1.464l-2.122 2.122a1.5 1.5 0 0 0 .365 2.118l2.118 2.118a1.5 1.5 0 0 0 2.118.365l2.122-2.122c.49-.165 1.041-.049 1.464.28l2.295 2.295a1.745 1.745 0 0 1 .163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.363-1.031.02-2.137.702-2.877z"/>
                     </svg>
-                    1300 712 008
+                    <span class="d-none d-lg-inline">1300 712 008</span>
                 </a>
                 <a href="https://priorityhire.com.au/auth/login" class="btn btn-primary my-account-btn">My Account</a>
+                <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
             </div>
         </div>
     </div>
