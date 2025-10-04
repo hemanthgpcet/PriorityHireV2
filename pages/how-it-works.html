@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How It Works - Priority Hire</title>
+    <link rel="stylesheet" href="../css/root-style.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/how-it-works.css">
+</head>
+<body>
+    <div id="header-placeholder"></div>
+
+    <main class="how-it-works-main">
+        <div class="hero-section">
+            <div class="hero-content">
+                <h1>How Priority Hire Works</h1>
+                <p class="sub-heading">Finding Work & Hiring Staff Made Easy</p>
+                <p class="description">
+                    Priority Hire is a streamlined job marketplace that connects job seekers with businesses needing reliable staff
+                </p>
+            </div>
+            <div class="action-buttons">
+                <button class="btn-employer active">For Employers</button>
+                <button class="btn-job-seeker">For Job Seekers</button>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        fetch('../header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-placeholder').innerHTML = data;
+            });
+    </script>
+</body>
+</html>
